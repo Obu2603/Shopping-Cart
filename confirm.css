@@ -1,0 +1,117 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5); /* gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Card */
+.confirmation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    max-width: 400px;
+    width: 90%;
+    animation: scaleUp 0.5s ease-out;
+}
+
+@keyframes scaleUp {
+    0% {transform: scale(0.5);}
+    100% {transform: scale(1);}
+}
+
+/* Checkmark animation */
+.icon {
+    margin-bottom: 20px;
+}
+
+.checkmark {
+    display: inline-block;
+    font-size: 60px;
+    color: #2ecc71;
+    border: 4px solid #2ecc71;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    animation: pop 0.5s ease-out;
+}
+
+@keyframes pop {
+    0% {transform: scale(0);}
+    70% {transform: scale(1.2);}
+    100% {transform: scale(1);}
+}
+
+h1 {
+    font-size: 2rem;
+    color: #2ecc71;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.order-summary {
+    background-color: #f1f8ff;
+    padding: 15px 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.order-summary h3 {
+    margin-bottom: 10px;
+    color: #3498db;
+}
+
+.order-summary p {
+    font-size: 0.95rem;
+    color: #34495e;
+    margin: 5px 0;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+.btn.secondary {
+    background-color: #2ecc71;
+}
+
+.btn.secondary:hover {
+    background-color: #27ae60;
+}

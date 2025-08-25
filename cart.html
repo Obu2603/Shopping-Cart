@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <div class="cart-container">
+        <h2>Your Shopping Cart</h2>
+
+        <!-- Cart Items -->
+        <div id="cart-items"></div>
+
+        <!-- Total Section -->
+        <div class="total-section">
+            <h3>Total: ₹<span id="total-price">0</span></h3>
+            <button class="checkout-btn" onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Product List -->
+    <div class="product-container">
+        <h2>Available Products</h2>
+        <div class="products">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/715qLSCB37L._UF894,1000_QL80_.jpg" alt="Smart Watch">
+                <h3>Smart Watch</h3>
+                <p>₹500</p>
+                <button onclick="addToCart('Smart Watch', 500, this.previousElementSibling.previousElementSibling.previousElementSibling.src)">Add to Cart</button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="https://rkcustomisedgifts.com/wp-content/uploads/2024/01/Heart-Shape-Cushion-Pillow-288x300.jpg" alt="Heart Cushion">
+                <h3>Heart Cushion</h3>
+                <p>₹450</p>
+                <button onclick="addToCart('Heart Cushion', 450, this.previousElementSibling.previousElementSibling.previousElementSibling.src)">Add to Cart</button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuX6L9vMRfMtelfTP4uXh9A2vXrxPx6ddD7w&s" alt="Customized Mug">
+                <h3>Customized Mug</h3>
+                <p>₹300</p>
+                <button onclick="addToCart('Customized Mug', 300, this.previousElementSibling.previousElementSibling.previousElementSibling.src)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+</html>
